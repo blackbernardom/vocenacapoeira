@@ -1,0 +1,636 @@
+@font-face {
+    font-family: site_geral;
+    src: url(../fonts/sinkin.otf);
+}
+
+* {
+	margin: 0;
+	padding: 0;
+
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+
+	font-family: site_geral;
+}
+
+
+#cabecalho_fundo {
+	width: 100%;
+	height: 90px;
+	position: fixed;
+	top: 0px;
+	/*border: solid:1px;*/
+
+	
+	background-image: url(../imagens/PAGINA_CAPOEIRA-01.jpg);
+
+}
+
+
+#cabecalho {
+	max-width: 1200px;
+	height: 100%;
+	border: solid:1PX;
+	margin: auto;
+	/*border: solid:1px;*/
+}
+
+#banner {
+	width: 200px;
+	height: 100%;
+	float: left;
+		/*border: solid:1px;*/
+
+}
+#banner img {
+	width: 100%;
+	height: 80%;
+}
+#menu {
+	width: 700px;
+	height: 50px;
+	float: left;
+	margin-top: 20px;
+	margin-left: 50px;
+	padding-top: 20px;
+	/*border: solid:1px;*/
+}
+#menu > ul > li {
+	/*border: solid:1px;*/
+
+	display: inline;
+	padding-left: 15px;
+	padding-right: 15px;
+	position: relative;
+}
+#menu > ul > li:hover > .submenu {
+	height: 230px;
+}
+.submenu {
+	position: absolute;
+	left: 15px;
+	top: 23px;
+	width: 200px;
+	border: solid:1px;
+
+	height: 0px;
+	background-color:rgba(0,0,0,0.5); 
+	transition: all 500ms;
+
+	-webkit-box-shadow: 0px 4px 5px 0px rgba(50, 50, 50, 0.75);
+	-moz-box-shadow:    0px 4px 5px 0px rgba(50, 50, 50, 0.75);
+	box-shadow:         0px 4px 5px 0px rgba(50, 50, 50, 0.75);
+
+	overflow: hidden;
+}
+
+.submenu > ul {
+	
+}
+.submenu > ul > li {
+	padding-top: 5px;
+	padding-bottom: 5px;
+	padding-left: 10px;
+	border-top: solid 1px rgba(0,0,0,0.3);
+}
+.submenu > ul > li > a {
+	font-size: 16px;
+	color: #666;
+	text-decoration: none;
+	font-family: site_geral;
+	font-weight: bold;
+}
+
+#menu > ul > li > a {
+	font-size: 18px;
+	color: #666;
+	text-decoration: none;
+	font-weight: bold;
+}
+#menu > ul > li a:hover {
+	color: green;
+}
+#busca {
+
+	width: 150px;
+	height: 100%;
+	/*border: solid:1px;*/
+	float: right;
+}
+#login {
+	
+	text-decoration: underline;
+	color: #555;
+	cursor: pointer;
+}
+#elemento01 {
+	width: 100%;
+	height: 600px;
+	
+	margin-top: 290px;
+	background-repeat: no-repeat;
+}
+#elemento01 > div > a > img {
+	width:85%;
+	height: 570px;
+	margin: auto;
+}
+#destaque {
+	width: 100%;
+	height: 600px;
+	background-image: url(../imagens/capoeirista2.jpg);
+	
+	overflow: hidden;
+	margin-top: 290px;
+}
+
+#destaque > div {
+	width: 600px;
+	height: 300px;
+	margin: auto;
+	background-color: rgba(0,0,0,0.5);
+	
+	border-radius: 10px;
+	text-align: center;
+	padding-top: 50px;
+}
+#destaque > div > h1 {
+	font-size: 37px;
+	color: #fff;
+	text-shadow: 1px 1px #000;
+}
+#destaque > div > button {
+	width: 230px;
+	height: 65px;
+	font-size: 25px;
+	color: green;
+	border: solid 5px green;
+	border-radius: 5px;
+	cursor: pointer;
+	margin-top: 50px;
+	transition: all 500ms;
+}
+#destaque > div > button:hover {
+	background-color: rgba(0,0,0,0.5);
+}
+
+#destaque2 {
+	width: 100%;
+	height: 600px;
+	background-image: url(../imagens/capoeirista.jpg);
+	margin-top: 290px;
+	background-repeat: no-repeat;
+}
+
+#destaque2 > div {
+	width: 600px;
+	height: 300px;
+	margin: auto;
+	
+	
+	text-align: center;
+	padding-top: 50px;
+}
+#destaque2 > div > h1 {
+	font-size: 37px;
+	color: #fff;
+	text-shadow: 1px 1px #000;
+}
+#destaque2 > div > button {
+	width: 230px;
+	height: 65px;
+	font-size: 25px;
+	color: green;
+	border: solid 5px green;
+	border-radius: 5px;
+	cursor: pointer;
+	margin-top: 50px;
+	transition: all 500ms;
+}
+#destaque2 > div > button:hover {
+	background-color: rgba(0,0,0,0.5);
+}
+
+#destaqueinstrumentos {
+	width: 100%;
+	height: 600px;
+	background-image: url(../imagens/Untitled.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	margin-top: 90px;
+}
+
+#destaqueinstrumentos > div {
+	width: 85%;
+	height: 300px;
+	margin: auto;
+	
+	
+	text-align: center;
+	padding-top: 50px;
+}
+#destaqueinstrumentos > div > h1 {
+	font-size: 37px;
+	color: #fff;
+	text-shadow: 4px 4px 2px rgba(150, 150, 150, 1)
+}
+#destaqueinstrumentos > div > button {
+	width: 230px;
+	height: 65px;
+	font-size: 25px;
+	color: green;
+	border: solid 5px green;
+	border-radius: 5px;
+	cursor: pointer;
+	margin-top: 50px;
+	text-shadow: 4px 4px 2px rgba(150, 150, 150, 1)
+	transition: all 500ms;
+}
+#destaqueinstrumentos > div > button:hover {
+	background-color: rgba(0,0,0,0.5);
+}
+
+#corpo {
+	width: 100%;
+	margin:auto;
+	/*border: solid:1px;*/
+}
+.blocoServicos {
+	width: 100%;
+	height: 500px;
+	margin: auto;
+	/*border: solid:1px;*/
+	text-align: center;
+	padding-top: 30px;
+}
+
+.blocoServicos > article {
+	width: 21%;
+	height: 320px;
+	float:left;
+	margin-top: 50px;
+	margin-left: 2.5%;
+	padding: 5px;
+	border-radius: 50px;
+}
+.blocoServicos > article:hover {
+
+}
+.blocoServicos > article > h1 {
+
+}
+.blocoServicos > article > img {
+	width: 50%;
+	transition: transform 1s;
+}
+.blocoServicos > article > img:hover {
+	
+
+}
+.blocoServicos > article > p {
+	margin-top: 20px;
+}
+
+body {
+	position: relative;
+}
+#telaEscura {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,0.7);
+	display: none;
+}
+#modal {
+	text-align: center;
+	width: 400px;
+	height: 300px;
+	background-color: white;
+	position: fixed;
+	margin-left: -200px;
+	left: 50%;
+	top: 20%;
+	border-radius: 10%;
+}
+#modal >button {
+	margin: auto;
+	margin-right: 330px;
+	border-radius: 30px;
+
+}
+
+#modal  >input{
+	margin:auto;
+	margin-right: 300px; 
+	
+
+}
+
+#modal  >h1{
+	margin:auto;
+	margin-right: 300px; 
+	size: 10px;
+	font-family: arial;
+
+}
+
+
+#slider{
+	margin-top: 15px;
+	width: 100%;
+	height: 600px;
+	/*border: solid:1px;*/
+
+}
+#slider > img {
+	width: 100%;
+	
+
+}
+
+.music{
+	width: 23%;
+	margin-top: 80px;
+	margin-left: 10px;
+	height: 350px;
+	/*border: solid 2px;*/
+	float: left;
+}
+.music:hover{
+-webkit-box-shadow: 24px 5px 23px 0px rgba(50, 50, 50, 0.75);
+-moz-box-shadow:    24px 5px 23px 0px rgba(50, 50, 50, 0.75);
+box-shadow:         24px 5px 23px 0px rgba(50, 50, 50, 0.75);
+/*transition: all 500ms;*/
+/*transform: rotate(360deg);*/
+
+}
+.music > h3 {
+	font-size: 20px;
+	color: red;
+	text-align: center;
+	height: 60px;
+}
+.music > iframe {
+	width: 100%;
+	height: 150px;
+
+}
+.music > p {
+	font-family: fonte_corpomenu;
+	height: 50px;
+
+}
+/*----------------------------------------------------------------------------------------------*/
+#rodape{
+	max-width: 1000px;
+	height: 100px;
+	/*border: solid 2px;*/
+	margin: auto;
+
+}
+#social {
+	width: 20%;
+	height: 30px;
+	/*border: solid 2px;*/
+	margin: auto;
+	margin-top: 8px;
+
+}
+#social a > img{
+text-align: center;
+width: 30px;
+height: 28px;
+margin-left: 10px;
+}
+#copyrigth {
+	
+	width: 35%;
+	height: 30px;
+	/*border: solid 2px;*/
+	margin: auto;
+	margin-top: 15px;
+	
+}
+/*----------------------------------------------------------------------------------------------*/
+
+/*----------------------------------------------------------------------------------------------*/
+
+#corpocontato{
+	width: 75%;
+	
+	/*border: solid 2px;*/
+	margin: auto;
+}
+#corpocontato > form{
+	text-align: center;
+}
+
+
+#divcorpoconto{
+	width: 75%;
+	
+	/*border: solid 2px;*/
+	margin: auto;
+}
+.contocorpo{
+	width: 600px;
+	height: 300px;
+	margin: auto;
+	margin-top: 35px;
+	/*border: solid 1px;*/
+	
+}
+.contocorpo > h3 {
+	font-size: 10px;
+	color: red;
+	text-align: center;
+	height: 30px;
+
+
+
+}
+.contocorpo > a > img {
+	width: 95%;
+	height: 130px;
+
+}
+.contocorpo:hover{
+-webkit-box-shadow: 20px 5px 23px 0px rgba(40, 40, 40, 0.75);
+-moz-box-shadow:    20px 5px 23px 0px rgba(40, 40, 40, 0.75);
+box-shadow:         20px 5px 23px 0px rgba(40, 40, 40, 0.75);
+
+}
+
+#textoconto{
+	width: 50%;
+	
+	margin: auto;
+
+}
+#textoconto > h1{
+	padding-top: 5px;
+	font-size: 37px;
+	color: #ffb;
+	text-shadow: 1px 1px #000;
+	text-align: center;
+
+}
+#textocorpo > p {
+	text-align: center;
+}
+/*----------------------------------------------------------------------------------------------*/
+
+
+/*----------------------------------------------------------------------------------------------*/
+#divinstrumentacao{
+	width: 60%;
+	
+	border: solid 2px;
+	margin: auto;
+	background-color: rgb(56,176,222);
+}
+.instrumentacaocorpo{
+	width: 800px;
+	height: 650px;
+	margin: auto;
+	margin-top: 35px;
+	/*border: solid 1px;*/
+	
+}
+.instrumentacaocorpo > h3 {
+	font-size: 20px;
+	color: green;
+	text-align: center;
+	height: 30px;
+}
+
+.instrumentacaocorpo > a > img {
+	width: 100%;
+	height: 370px;
+
+	
+
+}
+.instrumentacaocorpo > p{
+	text-align: center;
+}
+
+/*----------------------------------------------------------------------------------------------*/
+.menulateral{
+	position: absolute;
+	left: 1640px;
+	top: 660px;
+	width: 200px;
+	border: solid:1px;
+	height: 5px;
+	background-color:rgba(1,2,2,0.5); 
+
+	-webkit-box-shadow: 24px 5px 23px 0px rgba(50, 50, 50, 0.75);
+-moz-box-shadow:    24px 5px 23px 0px rgba(50, 50, 50, 0.75);
+box-shadow:         24px 5px 23px 0px rgba(50, 50, 50, 0.75);
+
+}
+.menulateral> ul > li {
+	padding-top: 20px;
+	padding-bottom: 20px;
+	padding-left: 10px;
+	border-top: solid 1px rgba(0,0,0,0.3);
+}
+.menulateral> ul > li > a {
+	font-size: 16px;
+	color: #666;
+	text-decoration: none;
+	font-family: site_geral;
+	font-weight: bold;
+}
+
+/*----------------------------------------------------------------------------------------------*/
+
+/*----------------------------------------------------------------------------------------------*/
+.noticiario{
+	width: 23%;
+	margin-top: 30px;
+	margin-left: 10px;
+	margin: auto;
+	/*border: solid 2px;*/
+	
+}
+.noticiario > h3 {
+	font-size: 20px;
+	color: red;
+	text-align: center;
+	height: 30px;
+
+
+
+}
+.noticiario > a > img {
+	width: 100%;
+	height: 200px;
+}
+/*----------------------------------------------------------------------------------------------*/
+
+/*----------------------------------------------------------------------------------------------*/
+#element1{
+	width: 30%;
+	margin-top: 25px;
+	margin-left: 350px; 
+	/*border: solid 3px;*/
+	background-color: green;
+
+	
+}
+#element2{
+	width: 35%;
+	margin: auto;
+	margin-top: 25px;
+	/*border: solid 3px;*/
+	margin-right: 350px;
+	background-color: yellow;
+}
+#element2 > img {
+width: 200px;
+height: 120px;
+
+
+}
+#element1:hover{
+	-webkit-box-shadow: 0px 4px 5px 0px rgba(50, 50, 50, 0.75);
+	-moz-box-shadow:    0px 4px 5px 0px rgba(50, 50, 50, 0.75);
+	box-shadow:         0px 4px 5px 0px rgba(50, 50, 50, 0.75);
+
+}
+#element2:hover{
+	-webkit-box-shadow: 0px 4px 5px 0px rgba(50, 50, 50, 0.75);
+	-moz-box-shadow:    0px 4px 5px 0px rgba(50, 50, 50, 0.75);
+	box-shadow:         0px 4px 5px 0px rgba(50, 50, 50, 0.75);
+
+}
+
+
+
+
+
+
+
+
+
+/*----------------------------------------------------------------------------------------------*/
+
+
+
+
+/* Implemetar aqui o designer do site em relação a cadastro e login e nao esquecer de linkar todas as paginas e também não esquecer de verificad
+o banco de dados juntamente com as demais paginas*/
+
+/*-LOGIN EDIÇÃO DA PAGINA DE LOGIN-*/
+
+
+
+
+#formulariologin{
+	padding-left: 860px;
+}

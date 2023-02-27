@@ -1,0 +1,213 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+
+}
+@font-face{
+	font-family: fonte_menu;
+	src: url('../fonts/menu.ttf');
+}
+
+body {
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#e0f3fa+0,d8f0fc+50,b8e2f6+51,b6dffd+100;Shape+2+Style */
+background: #e0f3fa; /* Old browsers */
+background: -moz-linear-gradient(top,  #e0f3fa 0%, #d8f0fc 50%, #b8e2f6 51%, #b6dffd 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  #e0f3fa 0%,#d8f0fc 50%,#b8e2f6 51%,#b6dffd 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  #e0f3fa 0%,#d8f0fc 50%,#b8e2f6 51%,#b6dffd 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e0f3fa', endColorstr='#b6dffd',GradientType=0 ); /* IE6-9 */
+
+}
+#cabecalho {
+	max-width: 1000px;
+	height:150px;
+	/*border: solid 1px;*/
+	margin: auto;
+
+
+}
+/*estamos estipulando o banner e a baixo o tamano da imagem, por isso temos 2 banners declarados. */
+#banner{
+	width: 200px;
+	height: 150px;
+	border: solid 1px;
+	float: left;
+}
+#banner > a > img {
+	width: 100%;
+	height: 100%;
+
+}
+/* A baixo ele esta pegando tudo que tem no menu principal com seu caminho para que seja formatado.*/
+#menu_principal{
+	width: 660px;
+	height: 70px;
+	border: solid 1px;
+	float: right;
+	margin-top: 25px;
+	margin-right: 50px
+}
+
+#menu_principal > ul{
+border: solid 1px;
+margin-top: 20px;
+}
+#menu_principal > ul > li{
+border: solid 1px;
+display: inline;
+padding-left: 20px;
+padding-right: 24px;
+}
+#menu_principal > ul > li > a{
+color: black;
+text-decoration:none;
+font-family: fonte_menu;
+font-size: 9px; /*tamanho da fonte*/
+font-weight: bold;/*NEGRITOO*/
+transition: all 1s;
+
+}
+#menu_principal > ul > li > a:hover{
+	text-decoration: underline;
+	color: red;
+}
+
+#corpo{
+	max-width: 1000px;
+	height: 1350px;
+	border: solid 2px;
+	margin: auto;
+	overflow: auto;
+}
+#corpo > p{
+padding-left: 300px;
+text-decoration: underline;
+color: blue;
+font-size: 20px;
+color: black
+padding-top: 1px;
+height: 30px;
+}
+#elemento01{
+	width:950 ;
+	height: 450px;
+	border: solid 2px;
+	background-image: url("../imagens/slide.jpg");
+	background-size: 1000px 450px;
+    background-repeat: no-repeat;
+
+}
+.news{
+	width: 23%;
+	margin-top: 50px;
+	margin-left: 10px;
+	height: 300px;
+	/*border: solid 2px;*/
+	float: left;
+}
+.news > h3 {
+	font-size: 20px;
+	color: red;
+	text-align: center;
+	height: 30px;
+
+
+
+}
+.news > a > img {
+	width: 100%;
+	height: 150px;
+
+}
+
+#tabela {
+border: solid;
+}	
+
+
+#rodape{
+	max-width: 1000px;
+	height: 100px;
+	border: solid 1px;
+	margin: auto;
+
+}
+#rodape{
+	max-width: 1000px;
+	height: 100px;
+	/*border: solid 2px;*/
+	margin: auto;
+
+}
+#social {
+	width: 20%;
+	height: 30px;
+	/*border: solid 2px;*/
+	margin: auto;
+	margin-top: 8px;
+
+}
+#social a > img{
+text-align: center;
+width: 30px;
+height: 28px;
+margin-left: 10px;
+}
+/*-------A BAIXO A CLASS MUSIC*/
+.music{
+	width: 23%;
+	margin-top: 50px;
+	margin-left: 10px;
+	height: 350px;
+	/*border: solid 2px;*/
+	float: left;
+}
+.music:hover{
+-webkit-box-shadow: 24px 5px 23px 0px rgba(50, 50, 50, 0.75);
+-moz-box-shadow:    24px 5px 23px 0px rgba(50, 50, 50, 0.75);
+box-shadow:         24px 5px 23px 0px rgba(50, 50, 50, 0.75);
+/*transition: all 500ms;*/
+/*transform: rotate(360deg);*/
+
+}
+
+}
+.music > h3 {
+	font-size: 20px;
+	color: red;
+	text-align: center;
+	height: 60px;
+
+
+
+}
+.music > iframe {
+	width: 100%;
+	height: 150px;
+
+}
+.music > p {
+	font-family: fonte_corpomenu;
+	height: 50px;
+
+}
+.noticiario{
+	width: 23%;
+	margin-top: 30px;
+	margin-left: 10px;
+	height: 300px;
+	/*border: solid 2px;*/
+	
+}
+.noticiario > h3 {
+	font-size: 20px;
+	color: red;
+	text-align: center;
+	height: 30px;
+
+
+
+}
+.noticiario > a > img {
+	width: 200%;
+	height: 200px;

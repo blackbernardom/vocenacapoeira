@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<title>Inicio</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="icon" href="imagens/iconecapoeira.jpg" type="image/png" sizes="16x16">
+
+<!--           ATENÇÃO ARRUMAR OS CAMINHOS DOS  EASYSHARE      -->
+
+	<!--Jquery-->
+
+
+
+	<!--Plugin Redes Sociais-->
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+
+	<!-- JavaScript do Plugin da Pagina-->
+	<script type="text/javascript" src="jquery/bxslider/jquery.bxslider.min.js"></script>
+
+	<!-- CSS do bxslider-->
+	<link rel="stylesheet" type="text/css" href="jquery/bxslider/jquery.bxslider.css">
+
+	
+	<!-- -->
+	<script src="jquery/redessociais/jquery.kyco.easyshare.min.js">
+	</script>
+
+
+	<!-- CSS do Redesociais-->
+	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="jquery/redessociais/jquery.kyco.easyshare.css">
+
+
+
+
+
+</head>
+<body>
+	<div id="cabecalho_fundo">
+		<header id="cabecalho">
+			<div id="banner">
+				<a href="index.html">
+					<img src="imagens/iconecapoeira.jpg">
+				</a>
+			</div>
+			<nav id="menu">
+				<ul>
+					<li>
+						<a href="index.html">Inicio</a>
+					</li>
+					<li>
+						<a href="">Diversos</a>
+						<div class="submenu">
+							<ul>
+								<li>
+									<a href="videos.php">Videos</a>
+								</li>
+								<li>
+									<a href="contos.html">Contos</a>
+								</li>
+								<li>
+									<a href="noticia.html">Noticias</a>
+								</li>
+								<li>
+									<a href="contato.html">Contato</a>
+								</li>
+								<li>
+									<a href="login.php">Login</a>
+								</li>
+								<li>
+									<a href="cadastro.php">Cadastro</a>
+								</li>
+							</ul>
+						</div>
+					<li>
+						<a href="instrumentacao.html">Instrumentação</a>
+					</li>
+					<li>
+						<a href="sobre.html">Sobre</a>
+					</li>
+				</ul>
+			</nav>
+			
+		</header>
+	</div>
+
+	<div id="elemento01">
+			<div id="slider">
+        <a href="contos.html"><img class="transicao" src="imagens/cont.jpg"></a>
+       	<a href="instrumentacao.html"><img class="transicao" src="imagens/instru.jpg"></a> 
+        <a href="videos.php"><img class="transicao" src="imagens/capoeirista1.jpg"></a>
+        
+     		</div>
+
+       		<script>
+          		var myIndex = 0;
+          		carousel();
+
+          		function carousel() {
+          		var i;
+          		var x = document.getElementsByClassName("transicao");
+           		for (i = 0; i < x.length; i++) {
+             	x[i].style.display = "none";  
+          			}
+            	myIndex++;
+             		if (myIndex > x.length) {myIndex = 1}    
+            		x[myIndex-1].style.display = "block";  
+            		setTimeout(carousel, 2500);
+            		}
+       		</script>
+     		</div>
+		</div>
+	
+	<main id="corpo">
+
+
+
+
+		<div class="blocoServicos">
+				<h1>Capoeira Arte</h1>
+				<article>
+				<h1>Movimentos</h1>
+					<img src="https://66.media.tumblr.com/03c57947e9ba3c88bbe35191ca81e0ec/tumblr_nxrkn3z7WY1ukomjqo1_400.gif" alt="">
+					<p>Movimentos da Capoeira podem surpreender você!!! </p>
+					<a href="movimentos.html">Saiba mais</a>
+				</article>
+				<article>
+				<h1>Cultura</h1>
+					<img src="https://67.media.tumblr.com/225373a4b85e3b8354abed880d318e34/tumblr_o4f8zcR4LA1ukomjqo1_400.gif" alt="">
+					<p>Sabe da onde a capoeira veio ?  </p>
+					<a href="cultura.html">Saiba mais</a>
+				</article>
+				<article>
+				<h1>Luta</h1>
+					<img src="https://67.media.tumblr.com/452bfc1fb81c423448b7f3a9ef13872d/tumblr_o0n1l19BkP1udi9g8o1_400.gif" alt="">
+					<p>Sim, a capoeira também é luta...</p>
+					<a href="luta.html">Saiba mais</a>
+				</article>
+
+					<article>
+					<h1>Serviços</h1>
+					<img src="https://66.media.tumblr.com/e83bfbb01d07675659f59533d2c664be/tumblr_o6q1jcDgSt1vronc6o1_400.gif" alt="">
+					<p>Professores e horário de aula em POA RS</p>
+					<a href="servicos.html">Saiba mais</a>
+				</article>
+			</div>		
+	<!-- 
+		<div id= slider>
+			<ul class="bxslider">
+  <li><img src="https://media.giphy.com/media/GYt8vu7nSsdLa/giphy.gif" /></li>
+  <li><img src="/images/pic2.jpg" /></li>
+  <li><img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRbLxhmTuaZ2B5yS_a4bF9xqOmLBpDPSMzdyVm5s0xoa1TawUcJ" /></li>
+  <li><img src="/images/pic4.jpg" /></li>
+</ul>
+		</div>-->
+	</main>
+
+	<div id="telaEscura">
+		<div id="modal">
+		<BUTTON id=fecharLoguin>X</BUTTON>
+
+			<h1>Loguin:</h1>
+			<input id="FLoguin" type="text" name="Loguin">
+			<h1>Senha:</h1>
+			<input id="Fsenha" type="password" name="Password">
+			<BUTTON id=fecharLoguin>Enviar</BUTTON>
+		</div>
+	</div>
+	<script>
+		$("#login").click(function(){
+		$("#telaEscura").css('display','block');
+		});
+
+		$("#fecharLoguin").click(function(){
+			$("#telaEscura").css('display','none');
+		});
+
+
+		$(document).ready(function(){
+  	$('.bxslider').bxSlider();
+	});
+
+	</script>
+	<div>
+	<footer id="rodape">
+		<div id="social">
+			<a href="" title="">
+				<img src="imagens/face.ico" alt="">
+			</a>
+			<a href="" title="">
+				<img src="imagens/linke.ico" alt="">
+			</a>
+			<a href="" title="">
+				<img src="imagens/twitter.png" alt="">
+			</a>
+			<a href="" title="">
+				<img src="imagens/youtube.png" alt="">
+			</a>
+		</div>
+		<div id="copyright">
+			<p>© 2016 Senac-RS - Todos os direitos Reservados.</p>
+		</div>
+	</footer>
+
+</body>
+</html>
+
+	

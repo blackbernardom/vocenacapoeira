@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<title>Contato</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="icon" href="imagens/iconecapoeira.jpg" type="image/png" sizes="16x16">
+
+<!--           ATENÇÃO ARRUMAR OS CAMINHOS DOS  EASYSHARE      -->
+
+	<!--Jquery-->
+
+
+
+	<!--Plugin Redes Sociais-->
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+
+	<!-- JavaScript do Plugin da Pagina-->
+	<script type="text/javascript" src="jquery/bxslider/jquery.bxslider.min.js"></script>
+
+	<!-- CSS do bxslider-->
+	<link rel="stylesheet" type="text/css" href="jquery/bxslider/jquery.bxslider.css">
+
+	
+	<!-- -->
+	<script src="jquery/redessociais/jquery.kyco.easyshare.min.js">
+	</script>
+
+
+	<!-- CSS do Redesociais-->
+	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="jquery/redessociais/jquery.kyco.easyshare.css">
+
+
+
+
+
+</head>
+<body>
+	<div id="cabecalho_fundo">
+		<header id="cabecalho">
+			<div id="banner">
+				<a href="index.html">
+					<img src="imagens/iconecapoeira.jpg">
+				</a>
+			</div>
+			<nav id="menu">
+				<ul>
+					<li>
+						<a href="index.html">Inicio</a>
+					</li>
+					<li>
+						<a href="">Diversos</a>
+						<div class="submenu">
+							<ul>
+								<li>
+									<a href="videos.php">Videos</a>
+								</li>
+								<li>
+									<a href="contos.html">Contos</a>
+								</li>
+								<li>
+									<a href="noticia.html">Noticias</a>
+								</li>
+								<li>
+									<a href="contato.html">Contato</a>
+								</li>
+								<li>
+									<a href="login.php">Login</a>
+								</li>
+								<li>
+									<a href="cadastro.php">Cadastro</a>
+								</li>
+							</ul>
+						</div>
+					<li>
+						<a href="instrumentacao.html">Instrumentação</a>
+					</li>
+					<li>
+						<a href="sobre.html">Sobre</a>
+					</li>
+				</ul>
+			</nav>
+			
+	</div>
+		</header>
+		<section id="destaque2">
+		<div>
+			<h1>Capoeira</h1>
+			<button>Contato</button>
+		</div>
+	</section>
+	<main id="corpo">
+
+	<div id="corpocontato">
+				</br>
+				</br>
+				</br>
+				<form method="POST" action="recebe_contato.php">
+
+		        <h1>Entre em contato</h1>
+
+
+		        <p class="TV">
+		        	<label for="nome">Nome:</label>
+		            <input type="text" id="nomeid" placeholder="Nome" required="required" name="nome" />
+		        </p>
+
+		        <p class="TVF">
+		        	<label for="fone">Fone:</label>
+		            <input type="text" id="foneid" placeholder="(xx)xx-xx-xx-xx" name="fone" />
+		        </p>
+
+
+		        <p class="TV">
+		       		 <label for="email">Email:</label>
+		            <input type="email" id="emailid" placeholder="email@mail.com" name="email" />
+		        </p>
+
+		        <p>
+		            <textarea name="comentario" placeholder="Deixe sua opnião"></textarea>
+		        </p>
+		        <p class="submit">
+
+		            <input type="submit" onclick="Enviar();" value="Enviar" />
+		        </p>
+
+		    </form>
+		    </br>
+		    </br>
+	</div>
+	<div class="blocoServicos">
+				<article>
+				<h1>Movimentos</h1>
+					<img src="https://66.media.tumblr.com/03c57947e9ba3c88bbe35191ca81e0ec/tumblr_nxrkn3z7WY1ukomjqo1_400.gif" alt="">
+					<p>Movimentos da Capoeira podem surpreender você!!! </p>
+					<a href="movimentos.html">Saiba mais</a>
+				</article>
+				<article>
+				<h1>Cultura</h1>
+					<img src="https://67.media.tumblr.com/225373a4b85e3b8354abed880d318e34/tumblr_o4f8zcR4LA1ukomjqo1_400.gif" alt="">
+					<p>Sabe da onde a capoeira veio ?  </p>
+					<a href="cultura.html">Saiba mais</a>
+				</article>
+				<article>
+				<h1>Luta</h1>
+					<img src="https://67.media.tumblr.com/452bfc1fb81c423448b7f3a9ef13872d/tumblr_o0n1l19BkP1udi9g8o1_400.gif" alt="">
+					<p>Sim, a capoeira também é luta...</p>
+					<a href="luta.html">Saiba mais</a>
+				</article>
+
+					<article>
+					<h1>Serviços</h1>
+					<img src="https://66.media.tumblr.com/e83bfbb01d07675659f59533d2c664be/tumblr_o6q1jcDgSt1vronc6o1_400.gif" alt="">
+					<p>Professores e horário de aula em POA RS</p>
+					<a href="servicos.html">Saiba mais</a>
+				</article>
+			</div>		
+	
+	</main>
+	<footer id="rodape">
+		<div id="social">
+			<a href="" title="">
+				<img src="imagens/face.ico" alt="">
+			</a>
+			<a href="" title="">
+				<img src="imagens/linke.ico" alt="">
+			</a>
+			<a href="" title="">
+				<img src="imagens/twitter.png" alt="">
+			</a>
+			<a href="" title="">
+				<img src="imagens/youtube.png" alt="">
+			</a>
+		</div>
+		<div id="copyright">
+			<p>© 2016 Senac-RS - Todos os direitos Reservados.</p>
+		</div>
+	</footer>
+
+</body>
+</html>
